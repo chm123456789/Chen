@@ -12,6 +12,7 @@ public class word{
 
     	test1();
     	test2();
+    	test4();
     }
     
 	
@@ -35,7 +36,16 @@ public class word{
 	  
 		
 		}
-	
+	public static void test4(){
+	    String[] ss=str.split("");
+	    StringBuffer sb=new StringBuffer();
+	    for(int i=0;i<ss.length;i++) {
+	    	String s=ss[i].substring(0,1).toUpperCase()+ss[i].substring(1);
+	    	sb.append(s);
+	    }
+		System.out.println(sb);
+		}
+	 
 	
 	
 	
