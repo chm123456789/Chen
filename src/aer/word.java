@@ -13,6 +13,8 @@ public class word{
     	test1();
     	test2();
     	test4();
+    	test5();
+    	test6();
     }
     
 	
@@ -46,6 +48,30 @@ public class word{
 		System.out.println(sb);
 		}
 	 
+	public static void test5(){
+	    StringBuffer sb =new StringBuffer(str);
+	    System.out.println(sb.reverse().toString());
+	    StringBuffer sb2=new StringBuffer();
+	    for(int i=str.length()-1;i>=0;i--) {
+	    	sb2.append(str.charAt(i));
+	    }
+	    System.out.println(" "+sb2);
+	    }
+	
+	
+	public static void test6(){
+	    String str="this is a test of java";
+	    String[] arr2=str.split(" ");
+	    for(int i=0;i<arr2.length;i++)
+	    {
+	    	System.out.println(arr2[i]+"");
+	    }
+	
+	    
+	
+	}
+		}
+	 
 	
 	
 	
@@ -56,5 +82,3 @@ public class word{
 	
 	
 	
-	
-}
