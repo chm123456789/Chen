@@ -1,24 +1,33 @@
 package aer;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
+import javax.lang.model.type.ArrayType;
+
 public class words {
-	private static String str1="this is a test of java";
 	@SuppressWarnings("unused")
+	private static String str1="this is a test of java";
+	
+
 	
     public static void main (String[] args) {
-    	test1();
-    	
+
+    	test3();
     	
     }
-	private static void test1() {
-		// TODO Auto-generated method stub
-		int count=0;
+    
 	
-		for(int i=0;i<str1.length();i++)
-		{
-			if('s'==str1.charAt(i)) {
-				count++;
-			}
+	public static void test3(){
+
+		char[] ch=new char[str1.length()];
+		for(int i=0;i<str1.length();i++) {
+			ch[i]=str1.charAt(i);
 		}
-		System.out.println("s出现的次数："+count);
+		System.out.println(Arrays.toString(ch));
+		char[] ch2=str1.toCharArray();
+		System.out.println(Arrays.toString(ch2));
+	
 	}
+	
 }
