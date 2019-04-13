@@ -11,7 +11,7 @@ public class word{
     public static void main (String[] args) {
 
     	test1();
-    	
+    	test2();
     }
     
 	
@@ -28,5 +28,23 @@ public class word{
   
 	
 	}
+	public static void test2(){
+	    int star=str.indexOf("test");
+	    String s=str.substring(star,star+5);
+	    System.out.println("È¡³ö£º"+s);
+	  
+		
+		}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 }
