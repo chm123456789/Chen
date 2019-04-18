@@ -10,7 +10,8 @@ public class regex {
     	test3();
     	test6();
     	test8();
-    	test9();}
+    	test9();
+    	test10();}
     	
     	public static void test1()
     	{String s="(0000)0000-0000";
@@ -73,7 +74,19 @@ public class regex {
     		System.out.println(s10); 
     
 	}
+    	public static <Matcher> void test10()
+    	{
+    		  
+    		 		 String s8="%...%CXLL=add1,31,123.12%CXLL=add2,32,124%CXLL=,33,125.12%LL=-121.11"; 
+    	 		 Pattern p3=Pattern.compile("(%CXLL=)(.*)(%)"); 
+    			 Matcher m3=(Matcher) p3.matcher(s8); 
+    				 StringBuffer s9=new StringBuffer(); 
+    			 while(((java.util.regex.Matcher) m3).find()) { 
+    		 				 s9.append(((java.util.regex.Matcher) m3).group()); 
+    				 } 
+    	 		 System.out.println("提取的字符串为："+s9); 
 
+	}
     	
     	
     	
