@@ -9,7 +9,8 @@ public class regex {
     	test1();
     	test3();
     	test6();
-    	test8();}
+    	test8();
+    	test9();}
     	
     	public static void test1()
     	{String s="(0000)0000-0000";
@@ -60,6 +61,27 @@ public class regex {
 
     
 	}
-		
+    	public static void test9()
+    	{
+    		 String s9="123chmpupelglwpupelsbjiushini"; 
+    		Pattern p9=Pattern.compile("(pupel)");
+    		java.util.regex.Matcher m9=p9.matcher(s9);
+    		StringBuffer s10=new StringBuffer();
+    		while(m9.find()) {
+    			m9.appendReplacement(s10, "pupil");
+    		}
+    		System.out.println(s10); 
+    
+	}
+
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
+    	
 	
 }
