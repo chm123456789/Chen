@@ -5,7 +5,8 @@ public class regex {
 	 public static void main (String[] args) {
 
     	test1();
-    	test3();}
+    	test3();
+    	test6();}
     	
     	public static void test1()
     	{String s="(0000)0000-0000";
@@ -21,7 +22,18 @@ public class regex {
 
     
 	}
+    	public static void test6()
+    	{
+    		 String s4="abcab435cabc"; 
+    			 
+    				System.out.println(s4.matches("(.*)(abc)")); 
+    				 String s5="abcab435ca56"; 
+        			 
+     				System.out.println(s5.matches("(.*)(abc)")); 
+
+
     
+	}
 		
 	
 }
