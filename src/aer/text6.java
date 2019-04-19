@@ -1,5 +1,6 @@
 package aer;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class text6 {
@@ -19,6 +20,12 @@ public class text6 {
 		{
 			System.out.println(arr1[i]);
 		}
+		System.out.println("---≈≈–Ú--");
+		Arrays.parallelSort(arr1);
+		for(int i=0;i<10;i++) {
+			System.out.println(arr1[i]);
+		}
+		
 	}
 
 }
