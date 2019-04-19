@@ -2,6 +2,7 @@ package aer;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class text6 {
 	public static void main(String[] args)
@@ -25,6 +26,23 @@ public class text6 {
 		for(int i=0;i<10;i++) {
 			System.out.println(arr1[i]);
 		}
+		System.out.println("--查找--");
+		
+		@SuppressWarnings("resource")
+		Scanner sc=new Scanner(System.in);
+		int s=sc.nextInt();
+		int find=-1;
+		if((find=Arrays.binarySearch(arr1,s))>-1)
+		{
+			System.out.println("元素所在的位置是："+find);
+			
+		}else {
+			System.out.println("没有该数组");
+		}
+			
+		
+		
+		
 		
 	}
 
