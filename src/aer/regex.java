@@ -1,5 +1,7 @@
 package aer;
 
+import java.util.regex.MatchResult;
+import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class regex {
@@ -7,6 +9,7 @@ public class regex {
 	 public static void main (String[] args) {
 
     	test1();
+    	test2();
     	test3();
     	test6();
     	test8();
@@ -17,6 +20,17 @@ public class regex {
     	{String s="(0000)0000-0000";
 		System.out.println(s.matches("\\(\\d{4}\\)\\d{4}\\-\\d{4}"));
 	
+    }
+    	public static  void test2()
+    	{String ipadress="1234we100.45.1.65tw445200"; 
+    			Pattern p=Pattern.compile("(\\d{1,3}\\.){3}\\d{1,3}"); 
+     		Matcher m=p.matcher(ipadress); 
+    	 
+    	 
+    	 		while(m.find()) { 
+    				System.out.println(m.group()); 
+
+    	}
     }
     	public static void test3()
     	{
