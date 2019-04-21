@@ -2,8 +2,12 @@ package text;
 
 class MyException extends Exception{
 
-	
-	
+	public MyException(String message) {
+		super(message);
+	}
+	public String getMessage() {
+		return String.format("\"%s\"", Thread.currentThread().getName())+"For input string:"+super.getMessage();
+	}
 	
 
 	
@@ -20,7 +24,7 @@ class MyTool{
 			
 			char ch=str.charAt(i);
 			if(ch>='0'&&ch<='9')result=result*10+ch-'0';
-			else throw new MyException();
+			else throw new MyException(str);
 		}
 		return result;
 	}
