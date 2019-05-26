@@ -26,9 +26,15 @@ public class NewCharacter {
     		  c.accept(app);
     	  }
       }
-      public static void main(String[] args)
+      @SuppressWarnings("unused")
+	public static void main(String[] args)
       {
     	  
+		  Apple app1=new Apple("ºìÉ«",1);
+    	  Apple app2=new Apple("ÂÌÉ«",2);
+    	  Apple app3=new Apple("·ÛÉ«",3);
+    
+		
       }
       
 }
