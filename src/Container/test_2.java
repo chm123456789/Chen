@@ -2,6 +2,7 @@ package Container;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
 
 public class test_2 {
@@ -23,6 +24,11 @@ public class test_2 {
 			System.out.println(key+"  "+map.get(key));
 			}
 		System.out.println();
+		System.out.println("entrySet±éÀú:");
+		for(Entry<Stu1,String> entry:map.entrySet())
+		{
+			System.out.println(entry.getKey()+"  "+entry.getValue());
+		}
 	
 	}		
 	
