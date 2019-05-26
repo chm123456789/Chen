@@ -34,9 +34,18 @@ public class NewCharacter {
     	  Apple app2=new Apple("绿色",2);
     	  Apple app3=new Apple("粉色",3);
     	  Apple[] Apples= {app1,app2,app3};
+    	  System.out.println("匿名内部类");
+    	  ConsumerApple(Apples,new  Consumer<Apple>()
+    	{
+    		  public void accept(Apple t) {
+    			  System.out.println(t);
+    		  }
+    		  
+    			  }
+    	  );
           System.out.println("lambda表达式");
           ConsumerApple(Apples, apple ->{
-        					System.out.println(apple.toString());
+          System.out.println(apple.toString());
         	  			});
 		
       }
