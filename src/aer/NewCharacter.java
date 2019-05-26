@@ -33,7 +33,11 @@ public class NewCharacter {
 		  Apple app1=new Apple("红色",1);
     	  Apple app2=new Apple("绿色",2);
     	  Apple app3=new Apple("粉色",3);
-    
+    	  Apple[] Apples= {app1,app2,app3};
+          System.out.println("lambda表达式");
+          ConsumerApple(Apples, apple ->{
+        					System.out.println(apple.toString());
+        	  			});
 		
       }
       
