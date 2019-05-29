@@ -19,6 +19,21 @@ public class test4 {
 		System.out.println(MyQue.toString());
 		System.out.println();
 		
+		
+		//---∂”¡–
+		Stack sta=new Stack();
+		System.out.println("»Î’ª£∫");
+		sta.inStack("ª›√Ù");
+		sta.inStack("ª›‘∆");
+		sta.inStack("ª›æÍ");
+		sta.inStack("÷Ì÷Ì");
+		System.out.println(sta.toString());
+		System.out.println("≥ˆ’ª£∫");
+		if(!sta.isEmpty()) {
+			sta.outStack();
+		}
+		
+		System.out.println(sta.toString());
 	}
 
 }
