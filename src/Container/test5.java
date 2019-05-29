@@ -1,10 +1,27 @@
 package Container;
 
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
 public class test5 {
 	public static final Object id=null;
 public static void mian(String[] args)
 {
-	
+	List<Student2> list = new ArrayList<>();
+	 list.add(new Student2("01", "张三", 78));
+     list.add(new Student2("02", "李四", 79));
+     list.add(new Student2("03", "王五", 94));
+     list.add(new Student2("04", "赵六", 84)); 
+     Collections.sort(list);
+
+     Iterator<Student2> iterator = list.iterator();
+     while (iterator.hasNext()) {
+   
+
+     } 
 }
 }
 class student implements Comparable<Object>{
@@ -60,9 +77,7 @@ class student implements Comparable<Object>{
 			return false;
 		}
 
-		test5 s = (test5) o;
-
-		if (this.id.equals(s.id)) {
+		if (this.id.equals(test5.id)) {
 			return true;
 		} else {
 			return false;
