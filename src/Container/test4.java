@@ -6,7 +6,7 @@ import java.util.LinkedList;
 public class test4 {
 	public static void main(String[] arg)
 	{
-		MyQue MyQue=new MyQue();
+		MyQue MyQue=new MyQue();//队列
 		System.out.print("入队： ");
 		MyQue.inQueue("一一");
 		MyQue.inQueue("二二");
@@ -17,6 +17,8 @@ public class test4 {
 			MyQue.outQueue();
 		}
 		System.out.println(MyQue.toString());
+		System.out.println();
+		
 	}
 
 }
@@ -51,3 +53,42 @@ private LinkedList<Object> linklist;
 		}
 		return null;
 	}}
+//栈的实现
+class Stack{
+	private LinkedList<Object> linklist;
+	public Stack() {
+		linklist=new LinkedList<Object>();
+	}
+	//入栈操作
+	public void inStack(Object obj) {
+		linklist.addFirst(obj);
+	}
+	//出栈操作
+		public void outStack() {
+			linklist.removeFirst();
+		}
+	//判断栈是否为空
+		public boolean isEmpty() {
+			return linklist.isEmpty();
+			
+		}
+		public String toString() {
+			Iterator<Object> iterator=linklist.iterator();
+			while(iterator.hasNext()) {
+				System.out.println(iterator.next()+" ");
+			}
+			return  null;
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
