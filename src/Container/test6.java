@@ -1,4 +1,8 @@
 package Container;
+
+import java.util.HashSet;
+import java.util.Set;
+
 class person
 {
 	Integer age;
@@ -33,7 +37,14 @@ class person
 
 public class test6 {
 	public static void main(String[] args) {
-		
+		Set<person> hashSet = new HashSet<>();
+		person p1=new person (19 ,"李极");
+		person p2=new person (23 ,"高里");
+		person p3=new person (19 ,"李极");
+		hashSet.add(p1);
+		hashSet.add(p2);
+		hashSet.add(p3);
+		hashSet.forEach(str -> System.out.println(str));
 		
 	}
 
